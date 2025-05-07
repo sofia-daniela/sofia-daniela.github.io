@@ -1241,7 +1241,7 @@
                 </div>
             </div>
         </div>
-</div><script type='text/javascript'>
+</div><script>
     const lazyloadRunObserver = () => {
         const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
         const lazyloadBackgroundObserver = new IntersectionObserver( (entries) => {
@@ -1281,9 +1281,9 @@
         }
 
         /*
-		 * Get the site wrapper.
-		 * The skip-link will be injected in the beginning of it.
-		 */
+ * Get the site wrapper.
+ * The skip-link will be injected in the beginning of it.
+ */
         sibling = document.querySelector('.wp-site-blocks');
 
         // Early exit if the root element was not found.
@@ -1308,12 +1308,13 @@
         sibling.parentElement.insertBefore(skipLink, sibling);
     }());
 </script>
+<script src="https://operacionxv.mx/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js"></script>
 <script src="https://operacionxv.mx/wp-content/plugins/elementor/assets/lib/e-gallery/js/e-gallery.min.js?ver=1.2.0" id="elementor-gallery-js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js?ver=1.5.125" id="uc_cdnjs_cloudflare_com_ajax_libs_mediaelement_4_2_16_mediaelement_and_player_min_js-js"></script>
-<script src="https://operacionxv.mx/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/countdown/jquery.countdown.js?ver=1.5.125" id="countdown-js"></script>
-<script src="https://operacionxv.mx/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.24.4" id="elementor-pro-webpack-runtime-js"></script>
-<script src="https://operacionxv.mx/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.24.7" id="elementor-webpack-runtime-js"></script>
-<script src="https://operacionxv.mx/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.24.7" id="elementor-frontend-modules-js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js?ver=1.5.145" id="uc_cdnjs_cloudflare_com_ajax_libs_mediaelement_4_2_16_mediaelement_and_player_min_js-js"></script>
+<script src="https://operacionxv.mx/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/countdown/jquery.countdown.js?ver=1.5.145" id="countdown-js"></script>
+<script src="https://operacionxv.mx/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.4" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://operacionxv.mx/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.4" id="elementor-webpack-runtime-js"></script>
+<script src="https://operacionxv.mx/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.4" id="elementor-frontend-modules-js"></script>
 <script src="https://operacionxv.mx/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
 <script src="https://operacionxv.mx/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
 <script id="wp-i18n-js-after">
@@ -1324,13 +1325,16 @@
 <script id="elementor-pro-frontend-js-before">
     var ElementorProFrontendConfig = {
         "ajaxurl": "https:\/\/operacionxv.mx\/wp-admin\/admin-ajax.php",
-        "nonce": "5df802004e",
+        "nonce": "81ca66a7ef",
         "urls": {
             "assets": "https:\/\/operacionxv.mx\/wp-content\/plugins\/elementor-pro\/assets\/",
             "rest": "https:\/\/operacionxv.mx\/wp-json\/"
         },
         "settings": {
             "lazy_load_background_images": true
+        },
+        "popup": {
+            "hasPopUps": false
         },
         "shareButtonsNetworks": {
             "facebook": {
@@ -1412,8 +1416,8 @@
         }
     };
 </script>
-<script src="/wp-content/plugins/elementor-pro-assets/js/frontend.min.js?ver=3.24.4" id="elementor-pro-frontend-js"></script>
-<script src="/wp-includes-js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="https://operacionxv.mx/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.4" id="elementor-pro-frontend-js"></script>
+<script src="https://operacionxv.mx/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 <script id="elementor-frontend-js-before">
     var elementorFrontendConfig = {
         "environmentMode": {
@@ -1434,7 +1438,6 @@
             "previous": "Previo",
             "next": "Siguiente",
             "close": "Cerrar",
-            "a11yCarouselWrapperAriaLabel": "Carrusel | Scroll horizontal: Flecha izquierda y derecha",
             "a11yCarouselPrevSlideMessage": "Diapositiva anterior",
             "a11yCarouselNextSlideMessage": "Diapositiva siguiente",
             "a11yCarouselFirstSlideMessage": "Esta es la primera diapositiva",
@@ -1497,22 +1500,14 @@
             },
             "hasCustomBreakpoints": false
         },
-        "version": "3.24.7",
+        "version": "3.28.4",
         "is_static": false,
         "experimentalFeatures": {
             "additional_custom_breakpoints": true,
-            "container_grid": true,
-            "e_swiper_latest": true,
-            "e_nested_atomic_repeaters": true,
-            "e_optimized_control_loading": true,
-            "e_onboarding": true,
+            "e_local_google_fonts": true,
             "theme_builder_v2": true,
-            "home_screen": true,
-            "landing-pages": true,
-            "link-in-bio": true,
-            "floating-buttons": true,
-            "display-conditions": true,
-            "form-submissions": true
+            "editor_v2": true,
+            "home_screen": true
         },
         "urls": {
             "assets": "https:\/\/operacionxv.mx\/wp-content\/plugins\/elementor\/assets\/",
@@ -1520,7 +1515,7 @@
             "uploadUrl": "https:\/\/operacionxv.mx\/wp-content\/uploads"
         },
         "nonces": {
-            "floatingButtonsClickTracking": "0d4981b451"
+            "floatingButtonsClickTracking": "038e2f25b3"
         },
         "swiperClass": "swiper",
         "settings": {
@@ -1545,9 +1540,9 @@
         }
     };
 </script>
-<script src="/wp-content/plugins/elementor-assets/js/frontend.min.js?ver=3.24.7" id="elementor-frontend-js"></script>
-<script src="/wp-content/plugins/elementor-pro-assets/js/elements-handlers.min.js?ver=3.24.4" id="pro-elements-handlers-js"></script>
-<!--   Unlimited Elements 1.5.125 Scripts -->
+<script src="https://operacionxv.mx/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4" id="elementor-frontend-js"></script>
+<script src="https://operacionxv.mx/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.4" id="pro-elements-handlers-js"></script>
+<!--   Unlimited Elements 1.5.145 Scripts -->
 <script type='text/javascript' id='unlimited-elements-scripts'>
 
     /* Audio Player scripts: */
@@ -1587,7 +1582,8 @@
 
     jQuery(document).ready(function() {
         jQuery('#uc_timer_countdown_banner_elementor_1b3b499b').countdownUC('2024/02/24 14:30:00', function(event) {
-            var jQuerythis = jQuery(this).html(event.strftime('' + '<div class="uc_countdown_section days"><div class="uc_countdown_amount">%D</div><div class="uc_countdown_period"> Días </div></div>' + '<div class="uc_countdown_section hours"><div class="uc_countdown_amount">%H</div><div class="uc_countdown_period"> Hrs. </div></div>' + '<div class="uc_countdown_section minutes"><div class="uc_countdown_amount">%M</div><div class="uc_countdown_period"> Min. </div></div>' + '<div class="uc_countdown_section seconds"><div class="uc_countdown_amount">%S</div><div class="uc_countdown_period"> Seg. </div></div>')).on('finish.countdown', ueHideOnExpiry);
+            var jQuerythis = jQuery(this).html(event.strftime('' + '<div class="uc_countdown_section days"><div class="uc_countdown_amount">%D</div><div class="uc_countdown_period"> Días </div></div>' + '<div class="uc_countdown_section hours"><div class="uc_countdown_amount">%H</div><div class="uc_countdown_period"> Hrs. </div></div>' + '<div class="uc_countdown_section minutes"><div class="uc_countdown_amount">%M</div><div class="uc_countdown_period"> Min. </div></div>' + '<div class="uc_countdown_section seconds"><div class="uc_countdown_amount">%S</div><div class="uc_countdown_period"> Seg. </div></div>')).on('finish.countdown', ueHideOnExpiry)
+            ;
         });
 
         function ueHideOnExpiry() {
@@ -1656,4 +1652,6 @@
     //}
 </script>
 <!-- end Simple Custom CSS and JS -->
-</body></html>
+</body>
+</html>
+
